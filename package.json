@@ -1,0 +1,25 @@
+{
+  "name": "staticweb-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "run-s dev:*",
+    "dev:server": "browser-sync start -s public_html -w public_html/**/*",
+    "watch": "run-p watch:*",
+    "watch:scss": "onchange \"src/scss/**/*\" -- npm run build:scss",
+    "build": "run-s build:*",
+    "build:scss": "node-sass src/scss/style.scss --importer node_modules/node-sass-globbing/index.js public_html/css/style.css --output-style expanded"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.27.7",
+    "node-sass": "^7.0.0",
+    "node-sass-globbing": "^0.0.23",
+    "npm-run-all": "^4.1.5",
+    "onchange": "^7.1.0"
+  }
+}
