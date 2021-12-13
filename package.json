@@ -7,6 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "run-s dev:*",
     "dev:server": "browser-sync start -s public_html -w public_html/**/*",
+    "dev:watch": "run watch",
     "watch": "run-p watch:*",
     "watch:scss": "onchange \"src/scss/**/*\" -- npm run build:scss",
     "build": "run-s build:*",
