@@ -1,0 +1,23 @@
+<%
+siteTitle = "テストサイト";
+let meta = {
+    description: preDesc + "説明",
+    keywords: preKeywords + ""
+};
+
+%> 
+
+<meta charset='utf-8'>
+<% if(pageTitle !== ""){ %>
+    <title><%- pageTitle %> - <%- siteTitle %></title>
+<% }else{ %>
+    <title><%- siteTitle %></title>
+<% } %>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<link rel='stylesheet' type='text/css' media='screen' href='/css/style.css'>
+
+<% for(let key in meta){ %>
+    <meta name='<%- key %>' content='<%- meta[key] %>'>
+<% } %>
+
+<script src='/js/main.js'></script>
