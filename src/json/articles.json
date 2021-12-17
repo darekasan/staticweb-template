@@ -1,0 +1,53 @@
+{
+
+    "items": {
+        "sample1":{
+            "title": "サンプル1",
+            "description": "説明文を入れます1",
+            "image": "/images/sample.png",
+            "contents": [
+                {
+                    "type": "heading",
+                    "level": "2",
+                    "content": "heading"
+                },
+                {
+                    "type": "text",
+                    "content": "ここにテキストが入ります"
+                }
+            ]
+        },
+        "sample2":{
+            "title": "サンプル2",
+            "description": "説明文を入れます2",
+            "image": "/images/sample.png",
+            "contents": [
+                {
+                    "type": "heading",
+                    "level": "2",
+                    "content": "heading"
+                },
+                {
+                    "type": "text",
+                    "content": "ここにテキストが入ります"
+                }
+            ]
+        },
+        "sample3":{
+            "title": "サンプル3",
+            "description": "説明文を入れます3",
+            "image": "/images/sample.png",
+            "contents": [
+                {
+                    "type": "heading",
+                    "level": "2",
+                    "content": "heading"
+                },
+                {
+                    "type": "text",
+                    "content": "ここにテキストが入ります"
+                }
+            ]
+        }
+    }
+}

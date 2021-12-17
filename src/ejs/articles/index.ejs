@@ -1,0 +1,24 @@
+<% 
+let baseDir = "../../../";
+let jsonData = JSON.parse(include(baseDir+"src/json/articles.json"));
+%> 
+<!DOCTYPE html>
+<html>
+<head>
+    <%- include(baseDir+'src/ejs/_head.ejs', {pageTitle: "記事一覧", preDesc: "", preKeywords: ""}); %> 
+</head>
+<body>
+    <%- include(baseDir+'src/ejs/_header.ejs'); %>
+    <h1>記事一覧</h1>
+    <ul>
+        <% for(let key in jsonData.items){ %> 
+            
+            <% let item = jsonData.items[key]; %>
+            <li>
+                <a href="/articles/<%= key %>.html"><%- item.title %></a>
+            </li>
+        <% } %>
+    </ul>
+    <%- include(baseDir+'src/ejs/_footer.ejs'); %>
+</body>
+</html>
